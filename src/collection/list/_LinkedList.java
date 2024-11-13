@@ -6,22 +6,37 @@ public class _LinkedList {
 
     public static void main(String[] args) {
         /**
-         * Двунаправленный список, ordered, быстрый для добавления и удаления элементов,
-         * часто используется для создания очереди/стэка
+         * Двунаправленный список (элементы хранят ссылки на предыдущий и следующий элементы), ordered,
+         * быстрый для добавления и удаления элементов
          */
-        LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("C");
-        linkedList.add("B");
-        linkedList.add("D");
-        linkedList.add("E");
-        linkedList.add("A");
-        linkedList.add("C");
 
-        System.out.println(linkedList.get(2));
+        Student st1 = new Student("Vlad", 2);
+        Student st2 = new Student("Masha", 1);
+        Student st3 = new Student("Vanya", 4);
+        Student st4 = new Student("Vlad", 3);
+        Student st5 = new Student("Petya", 2);
 
-        for (String str : linkedList) {
-            System.out.print(str + " ");
-        }
+        LinkedList<Student> linkedList = new LinkedList<>();
+        linkedList.add(st1);
+        linkedList.add(st2);
+        linkedList.add(st3);
+        linkedList.add(st4);
+        linkedList.add(st5);
     }
 
+}
+
+class Student {
+    String name;
+    int course;
+
+    public Student(String name, int course) {
+        this.name = name;
+        this.course = course;
+    }
+
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", course=" + course + "]";
+    }
 }

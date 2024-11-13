@@ -1,27 +1,23 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        _Abstract _abstract = new NotAbstract();
-        NotAbstract notAbstract = new NotAbstract();
-
-        System.out.println(_abstract.name);
-        _Abstract.show();
-        System.out.println(notAbstract.name);
-        NotAbstract.show();
+        sortArray(new int[]{5, 2, 1, 3, 4});
     }
-}
 
-abstract class _Abstract {
-    String name = "Vlad";
+    public static int[] sortArray(int[] array) {
+        int[] odd = Arrays.stream(array)
+                .filter(num -> num % 2 == 1)
+                .toArray();
 
-    static void show() {
-        System.out.println("Vlad");
-    }
-}
+        Arrays.sort(odd);
 
-class NotAbstract extends _Abstract {
-    String name = "neVlad";
-
-    static void show() {
-        System.out.println("neVlad");
+        for (int i = 0, j = 0; i < array.length; i++) {
+            if (array[i] % 2 == 1) {
+                array[i] = odd[j++];
+            }
+        }
+        System.out.println(Arrays.toString(array));
+        return array;
     }
 }

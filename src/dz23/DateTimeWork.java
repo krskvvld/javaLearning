@@ -4,8 +4,8 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeWork {
-    private static DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("YYYY, MMMM-dd !! hh:mm");
-    private static DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh:mm, dd/MMM/YY");
+    private static DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("yyyy, MMMM-01 !! hh:mm");
+    private static DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh:mm, dd/MMM/yy");
 
     public static void changeInCamp(LocalDateTime start, LocalDateTime end, Period period, Duration duration) {
         LocalDateTime ldt = start;
@@ -20,8 +20,8 @@ public class DateTimeWork {
     }
 
     public static void main(String[] args) {
-        LocalDateTime start = LocalDateTime.of(2016, Month.JANUARY, 1, 9, 0, 0);
-        LocalDateTime end = LocalDateTime.of(2016, Month.OCTOBER, 31, 18, 0, 0);
+        LocalDateTime start = LocalDateTime.of(2016, Month.JANUARY, 1, 9, 0);
+        LocalDateTime end = LocalDateTime.of(2016, Month.OCTOBER, 31, 18, 0);
         Period period = Period.of(0, 1, 2);
         Duration duration = Duration.ofMinutes(600);
 
