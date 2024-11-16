@@ -1,4 +1,4 @@
-package collection.binarySearch;
+package javaPro.collection.binarySearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class BinarySearch {
 //        list.add(150);
 //        list.add(-30);
 //        list.add(19);
-//        Collections.sort(list);
+//        Collections.sort(list); f
 //        int index = Collections.binarySearch(list,12);
 //        System.out.println(index);
 
@@ -38,12 +38,12 @@ public class BinarySearch {
         System.out.println(employees);
         Collections.sort(employees);
         int index = Collections.binarySearch(employees, emp4);
-        System.out.println(index);
+        // System.out.println(index);
         System.out.println(employees);
 
 //        int[] arr = {2, 6, 1, 0, -2, 98, -21, 0};
 //        Arrays.sort(arr);
-//        int ind = Arrays.binarySearch(arr, 2);
+//        int index = Arrays.binarySearch(arr, 2);
 //        System.out.println(ind);
     }
 }
@@ -70,8 +70,8 @@ class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee otherEmployee) {
-        int result = this.id - otherEmployee.id;
-        if (result == 0) {
+        int result = Integer.compare(this.id, otherEmployee.id);
+        if (result == 0 ) {
             result = this.name.compareTo(otherEmployee.name);
         }
         return result;

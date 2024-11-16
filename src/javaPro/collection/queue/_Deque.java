@@ -1,4 +1,4 @@
-package collection.queue;
+package javaPro.collection.queue;
 
 import java.util.*;
 

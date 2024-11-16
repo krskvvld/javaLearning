@@ -1,4 +1,4 @@
-package collection.map;
+package javaPro.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,9 +7,10 @@ public class _HashMap {
 
     public static void main(String[] args) {
         /**
-         * Максимальная скорость, набор объектов, основан на хэш-таблице
+         * Структура данных, элементами котороый являютый парый ключ/значение.
+         * Not ordered, методы работают быстро.
          */
-        HashMap<Integer, String> hashMap = new HashMap<>();
+        Map<Integer, String> hashMap = new HashMap<>();
         hashMap.put(1, "A");
         hashMap.put(3, "C");
         hashMap.put(5, "E");

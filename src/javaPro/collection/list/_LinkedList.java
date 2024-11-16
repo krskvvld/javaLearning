@@ -1,4 +1,4 @@
-package collection.list;
+package javaPro.collection.list;
 
 import java.util.LinkedList;
 
@@ -7,7 +7,7 @@ public class _LinkedList {
     public static void main(String[] args) {
         /**
          * Двунаправленный список (элементы хранят ссылки на предыдущий и следующий элементы), ordered,
-         * быстрый для добавления и удаления элементов
+         * быстрый для добавления и удаления элементов в начало списка
          */
 
         Student st1 = new Student("Vlad", 2);

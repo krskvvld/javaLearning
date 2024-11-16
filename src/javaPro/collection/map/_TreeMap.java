@@ -1,4 +1,4 @@
-package collection.map;
+package javaPro.collection.map;
 
 import java.util.Map;
 import java.util.TreeMap;
