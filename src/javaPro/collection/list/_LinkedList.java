@@ -1,6 +1,7 @@
 package javaPro.collection.list;
 
 import java.util.LinkedList;
+import javaPro.collection.Student;
 
 public class _LinkedList {
 
@@ -10,13 +11,14 @@ public class _LinkedList {
          * быстрый для добавления и удаления элементов в начало списка
          */
 
-        Student st1 = new Student("Vlad", 2);
-        Student st2 = new Student("Masha", 1);
-        Student st3 = new Student("Vanya", 4);
-        Student st4 = new Student("Vlad", 3);
-        Student st5 = new Student("Petya", 2);
+        Student st1 = new Student(1, "Vlad");
+        Student st2 = new Student(2, "NeVlad");
+        Student st3 = new Student(3, "Sasha");
+        Student st4 = new Student(4, "Vlad");
+        Student st5 = new Student(5, "NeSasha");
 
-        LinkedList<Student> linkedList = new LinkedList<>();
+
+        LinkedList<javaPro.collection.Student> linkedList = new LinkedList<>();
         linkedList.add(st1);
         linkedList.add(st2);
         linkedList.add(st3);
@@ -24,19 +26,4 @@ public class _LinkedList {
         linkedList.add(st5);
     }
 
-}
-
-class Student {
-    String name;
-    int course;
-
-    public Student(String name, int course) {
-        this.name = name;
-        this.course = course;
-    }
-
-    @Override
-    public String toString() {
-        return "Student [name=" + name + ", course=" + course + "]";
-    }
 }

@@ -1,26 +1,35 @@
 package javaPro.collection.map;
 
-import java.util.Map;
+import javaPro.collection.Student;
+
 import java.util.TreeMap;
 
 public class _TreeMap {
 
     public static void main(String[] args) {
         /**
-         * Сортирует по ключу, основан на дереве
+         * Элементами TreeMap являются пары ключ/значение. Not ordered, sorted.
+         * В основе лежит красно-чёрное дерево. Это позволяет методам работать
+         * быстро, но не быстрее, чем методы в HashMap
          */
-        TreeMap<Integer, String> treeMap = new TreeMap<>();
-        treeMap.put(1, "A");
-        treeMap.put(3, "C");
-        treeMap.put(5, "E");
-        treeMap.put(2, "B");
-        treeMap.put(4, "D");
+        TreeMap<Student, Double> treeMap = new TreeMap<>();
+        Student st1 = new Student(1, "Vlad");
+        Student st2 = new Student(2, "Sasha");
+        Student st3 = new Student(3, "Andrew");
+        Student st4 = new Student(4, "Vlad");
+        Student st5 = new Student(5, "Masha");
+        Student st6 = new Student(6, "neVlad");
+        Student st7 = new Student(7, "Sasha");
 
-        System.out.println(treeMap.get(2));
+        treeMap.put(st1, 4.21);
+        treeMap.put(st2, 8.41);
+        treeMap.put(st3, 5.36);
+        treeMap.put(st4, 10.0);
+        treeMap.put(st5, 6.12);
+        treeMap.put(st6, 8.1);
+        treeMap.put(st7, 5.21);
 
-        for (Map.Entry<Integer, String> entry : treeMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-        }
+        System.out.println(treeMap);
     }
 
 }

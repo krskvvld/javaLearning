@@ -1,26 +1,34 @@
 package javaPro.collection.map;
 
+import javaPro.collection.Student;
+
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class _LinkedHashMap {
 
     public static void main(String[] args) {
         /**
-         * Сохраняет порядок вставки объектов по ключам, основан на хэш-таблице + связанный список
+         * Является наследником HashMap, хранит информацию о порядке добавления элементов
+         * или порядке их использования. Производительность методов немного ниже, чем у
+         * HashMap.
          */
-        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
-        linkedHashMap.put(1, "A");
-        linkedHashMap.put(2, "B");
-        linkedHashMap.put(5, "C");
-        linkedHashMap.put(4, "D");
-        linkedHashMap.put(3, "E");
+        LinkedHashMap<Double, Student> linkedHashMap = new LinkedHashMap<>(16, 0.75F, true);
+        Student st1 = new Student(1, "Name1");
+        Student st2 = new Student(2, "Name2");
+        Student st3 = new Student(3, "Name3");
+        Student st4 = new Student(4, "Name4");
 
-        System.out.println(linkedHashMap.get(2));
+        linkedHashMap.put(5.4, st1);
+        linkedHashMap.put(6.2, st2);
+        linkedHashMap.put(4.4, st3);
+        linkedHashMap.put(8.4, st4);
 
-        for (Map.Entry<Integer, String> entry : linkedHashMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-        }
+        System.out.println(linkedHashMap);
+
+        System.out.println(linkedHashMap.get(5.4));
+        System.out.println(linkedHashMap.get(8.4));
+
+        System.out.println(linkedHashMap);
     }
 
 }
