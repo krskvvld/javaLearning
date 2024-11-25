@@ -22,15 +22,14 @@ public class _HashMap {
         Student st2 = new Student(2, "Name2");
         Student st3 = new Student(3, "Name3");
         Student st4 = new Student(4, "Name4");
-        Student st5 = new Student(1, "Name1");
+        Student st5 = new Student(1, "Name8");
         hashMap.put(st1, 7.2);
         hashMap.put(st2, 4.9);
         hashMap.put(st3, 6.24);
         hashMap.put(st4, 5.8);
         hashMap.put(st5, 7.2);
 
-        System.out.println(st5.equals(st1));
+        System.out.println(hashMap);
     }
 
 }
-
