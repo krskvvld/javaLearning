@@ -6,20 +6,17 @@ public class _LinkedHashSet {
 
     public static void main(String[] args) {
         /**
-         * Расширяет HashSet, ordered, not sorted, нельзя получить элемент по индексу,
-         * содержит только уникальные значения, при добавлении дубликата происходит замена
+         * Является наследником HashSet, в основе лежит HashMap содержит только
+         * уникальные значения, при добавлении дубликата происходит замена
          */
-        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
-        linkedHashSet.add("C");
-        linkedHashSet.add("B");
-        linkedHashSet.add("D");
-        linkedHashSet.add("E");
-        linkedHashSet.add("A");
-        linkedHashSet.add("C");
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.add(5);
+        linkedHashSet.add(3);
+        linkedHashSet.add(1);
+        linkedHashSet.add(8);
+        linkedHashSet.add(10);
 
-        for (String str : linkedHashSet) {
-            System.out.print(str + " ");
-        }
+        System.out.println(linkedHashSet);
     }
 
-}
+}git
