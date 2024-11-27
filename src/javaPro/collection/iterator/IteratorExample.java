@@ -13,6 +13,9 @@ public class IteratorExample {
         System.out.println(arrayList);
 
         Iterator<String> iterator = arrayList.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
     }
 }

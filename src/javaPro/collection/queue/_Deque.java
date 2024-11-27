@@ -6,28 +6,17 @@ public class _Deque {
 
     public static void main(String[] args) {
         /**
-         * Двусторонняя очередь, работает как по принципу FIFO, так и LIFO
+         * Двунаправленная очередь, в такой очереди элементы могут использоваться
+         * с обеих концов. Здесь работают оба правила - FIFO и LIFO.
+         * Реализуется классами ArrayDeque и LinkedList.
          */
-        Deque<String> fifoDeque = new ArrayDeque<>();
-        fifoDeque.add("A");
-        fifoDeque.add("B");
-        fifoDeque.add("C");
-        fifoDeque.add("D");
-        fifoDeque.add("E");
-
-        System.out.println(fifoDeque.getFirst());
-
-        for (String str : fifoDeque) {
-            System.out.print(str + " ");
-        }
-        System.out.println();
-        fifoDeque.remove();
-        for (String str : fifoDeque) {
-            System.out.print(str + " ");
-        }
-
-        System.out.println();
-        System.out.println();
+        Deque<Integer> fifoDeque = new ArrayDeque<>();
+        fifoDeque.add(2);
+        fifoDeque.add(7);
+        fifoDeque.add(-2);
+        fifoDeque.add(12);
+        fifoDeque.add(0);
+        System.out.println(fifoDeque);
 
         Deque<String> deque = new ArrayDeque<>();
         Queue<String> lifoDeque = Collections.asLifoQueue(deque);
@@ -37,14 +26,10 @@ public class _Deque {
         lifoDeque.add("D");
         lifoDeque.add("E");
 
-        for (String str : lifoDeque) {
-            System.out.print(str + " ");
-        }
+        System.out.println(lifoDeque);
         System.out.println();
         lifoDeque.remove();
-        for (String str : lifoDeque) {
-            System.out.print(str + " ");
-        }
+        System.out.println(lifoDeque);
     }
 
 }
