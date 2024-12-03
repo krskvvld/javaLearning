@@ -4,13 +4,11 @@ import java.util.LinkedList;
 import javaPro.collection.Student;
 
 public class _LinkedList {
-
     public static void main(String[] args) {
         /**
          * Двунаправленный список (элементы хранят ссылки на предыдущий и следующий элементы), ordered,
          * быстрый для добавления и удаления элементов в начало списка
          */
-
         Student st1 = new Student(1, "Vlad");
         Student st2 = new Student(2, "NeVlad");
         Student st3 = new Student(3, "Sasha");
@@ -25,5 +23,4 @@ public class _LinkedList {
         linkedList.add(st4);
         linkedList.add(st5);
     }
-
 }

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class _HashCode {
+public class _HashCodeAndEquals {
     public static void main(String[] args) {
         Map<Student, Double> hashmap = new HashMap<>();
         Student st1 = new Student("Vlad", "Karsakov", 3);

@@ -3,7 +3,6 @@ package javaPro.collection.set;
 import java.util.LinkedHashSet;
 
 public class _LinkedHashSet {
-
     public static void main(String[] args) {
         /**
          * Является наследником HashSet, в основе лежит HashMap содержит только
@@ -18,5 +17,4 @@ public class _LinkedHashSet {
 
         System.out.println(linkedHashSet);
     }
-
 }

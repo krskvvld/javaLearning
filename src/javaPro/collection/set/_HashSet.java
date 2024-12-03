@@ -3,7 +3,6 @@ package javaPro.collection.set;
 import java.util.HashSet;
 
 public class _HashSet {
-
     public static void main(String[] args) {
         /**
          * Коллекция, хранящая уникальные элементы, при добавлении дубликата
@@ -27,5 +26,4 @@ public class _HashSet {
 
         System.out.println(hashSet1);
     }
-
 }

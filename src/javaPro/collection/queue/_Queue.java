@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class _Queue {
-
     public static void main(String[] args) {
         /**
          * Коллекция, хранящая последовательность элементов. Добавляется
@@ -19,5 +18,4 @@ public class _Queue {
 
         System.out.println(queue);
     }
-
 }

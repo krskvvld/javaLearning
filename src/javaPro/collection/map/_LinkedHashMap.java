@@ -5,7 +5,6 @@ import javaPro.collection.Student;
 import java.util.LinkedHashMap;
 
 public class _LinkedHashMap {
-
     public static void main(String[] args) {
         /**
          * Является наследником HashMap, хранит информацию о порядке добавления элементов
@@ -30,5 +29,4 @@ public class _LinkedHashMap {
 
         System.out.println(linkedHashMap);
     }
-
 }

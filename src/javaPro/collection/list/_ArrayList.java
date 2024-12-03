@@ -244,5 +244,4 @@ public class _ArrayList {
 
         System.out.println(arrayList1);
     }
-
 }

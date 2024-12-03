@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _HashMap {
-
     public static void main(String[] args) {
         /**
          * В основе лежит массив, элементами этого массива являются структуры LinkedList.
@@ -31,5 +30,4 @@ public class _HashMap {
 
         System.out.println(hashMap);
     }
-
 }

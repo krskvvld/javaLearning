@@ -5,7 +5,6 @@ import javaPro.collection.Student;
 import java.util.TreeMap;
 
 public class _TreeMap {
-
     public static void main(String[] args) {
         /**
          * Элементами TreeMap являются пары ключ/значение. Not ordered, sorted.
@@ -31,5 +30,4 @@ public class _TreeMap {
 
         System.out.println(treeMap);
     }
-
 }

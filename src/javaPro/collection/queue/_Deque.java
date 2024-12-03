@@ -3,7 +3,6 @@ package javaPro.collection.queue;
 import java.util.*;
 
 public class _Deque {
-
     public static void main(String[] args) {
         /**
          * Двунаправленная очередь, в такой очереди элементы могут использоваться
@@ -31,5 +30,4 @@ public class _Deque {
         lifoDeque.remove();
         System.out.println(lifoDeque);
     }
-
 }

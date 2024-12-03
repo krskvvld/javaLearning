@@ -5,7 +5,6 @@ import javaPro.collection.Student;
 import java.util.TreeSet;
 
 public class _TreeSet {
-
     public static void main(String[] args) {
         /**
          * Хранит элементы в отсортированном по возростанию порядке. В основе TreeSet
@@ -26,5 +25,4 @@ public class _TreeSet {
 
         System.out.println(treeSet);
     }
-
 }

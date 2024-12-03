@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class StreamAPI {
+public class streamAPI {
     public static void main(String[] args) {
         List<Animal> animals = getAnimals();
         // Filter
