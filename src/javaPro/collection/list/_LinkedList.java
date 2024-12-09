@@ -1,7 +1,7 @@
 package javaPro.collection.list;
 
 import java.util.LinkedList;
-import javaPro.collection.Student;
+import javaPro.studentEx.Student;
 
 public class _LinkedList {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class _LinkedList {
         Student st5 = new Student(5, "NeSasha");
 
 
-        LinkedList<javaPro.collection.Student> linkedList = new LinkedList<>();
+        LinkedList<Student> linkedList = new LinkedList<>();
         linkedList.add(st1);
         linkedList.add(st2);
         linkedList.add(st3);

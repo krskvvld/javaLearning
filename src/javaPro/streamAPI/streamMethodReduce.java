@@ -24,7 +24,7 @@ public class streamMethodReduce {
             System.out.println("Not present");
         }
 
-        int result3 = list1.stream().reduce(1, (accumulator, element) ->
+        int result3 = list1.stream().reduce(2, (accumulator, element) ->
                 accumulator * element);
         System.out.println(result3);
 

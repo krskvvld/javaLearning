@@ -69,9 +69,9 @@ class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee otherEmployee) {
-        int result = Integer.compare(this.id, otherEmployee.id);
+        int result = Integer.compare(id, otherEmployee.id);
         if (result == 0 ) {
-            result = this.name.compareTo(otherEmployee.name);
+            result = name.compareTo(otherEmployee.name);
         }
         return result;
     }

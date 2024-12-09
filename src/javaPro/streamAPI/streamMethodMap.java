@@ -20,8 +20,13 @@ public class streamMethodMap {
             return e;
         }).toArray();
 
-        Set<String> stringSet1 = new TreeSet<>();
-        Set<Integer> stringSet2 = stringSet1.stream().map(element -> element.length()).collect(Collectors.toSet());
+        Set<String> stringSet = new TreeSet<>();
+        stringSet.add("Hello");
+        stringSet.add("World");
+        stringSet.add("Java");
+        stringSet.add("C");
+        Set<Integer> integerSet = stringSet.stream().map(element -> element.length() + 1).collect(Collectors.toSet());
+        System.out.println(integerSet);
 
         List<String> list1 = new ArrayList<>();
         list1.add("Vlad");

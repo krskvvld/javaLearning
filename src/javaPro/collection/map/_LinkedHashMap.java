@@ -1,6 +1,6 @@
 package javaPro.collection.map;
 
-import javaPro.collection.Student;
+import javaPro.studentEx.Student;
 
 import java.util.LinkedHashMap;
 

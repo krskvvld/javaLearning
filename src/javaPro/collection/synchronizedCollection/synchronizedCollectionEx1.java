@@ -26,6 +26,7 @@ public class synchronizedCollectionEx1 {
         thread1.join();
         thread2.join();
 
+        System.out.println(al1);
         System.out.println(al2);
     }
 }

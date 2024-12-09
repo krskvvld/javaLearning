@@ -1,4 +1,4 @@
-package javaPro.collection;
+package javaPro.studentEx;
 
 import java.util.Objects;
 

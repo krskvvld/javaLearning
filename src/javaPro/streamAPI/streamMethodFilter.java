@@ -2,7 +2,6 @@ package javaPro.streamAPI;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class streamMethodFilter {
     public static void main(String[] args) {
@@ -15,7 +14,7 @@ public class streamMethodFilter {
 
         List<String> filterList = arrayList.stream()
                 .filter(element -> element.startsWith("C"))
-                .collect(Collectors.toList());
+                .toList();
         System.out.println(filterList);
     }
 }
