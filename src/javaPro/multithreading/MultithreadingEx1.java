@@ -9,9 +9,9 @@ public class MultithreadingEx1 {
          *      1. Производительность
          *      2. Concurrency
          */
-        MyThread1 myThread = new MyThread1();
+        MyThread1 myThread1 = new MyThread1();
         MyThread2 myThread2 = new MyThread2();
-        myThread.start();
+        myThread1.start();
         myThread2.start();
     }
 }
