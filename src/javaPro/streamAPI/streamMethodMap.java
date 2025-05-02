@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class streamMethodMap {
     /** Stream - это последовательность элементов, поддерживающих
      * последовательные и параллельные операции над ними.
-     *
+
      * Метод map() берет каждый элемент из набора данных,
      * преобразует его с помощью заданной функции и возвращает
      * новый набор с результатами преобразования.
@@ -16,7 +16,7 @@ public class streamMethodMap {
         int[] array = {1, 9, 3, 2, 5};
         array = Arrays.stream(array).map(e -> {
             if (e % 3 == 0)
-                e = e / 3;
+                e /= 3;
             return e;
         }).toArray();
 
