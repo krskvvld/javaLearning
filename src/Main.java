@@ -1,23 +1,63 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        sortArray(new int[]{5, 2, 1, 3, 4});
+        I1 i1 = new I1() {
+            @Override
+            public void abc(boolean b) {
+                System.out.println(b);
+            }
+        };
+        i1.abc(true);
+        I1 i2 = System.out::println;
+        i2.abc(false);
+    }
+}
+
+interface I1 {
+    void abc(boolean b);
+
+    static String age(int age) {
+        return age < 18 ? "<18"
+                : age == 18 ? "==18"
+                : ">18";
     }
 
-    public static int[] sortArray(int[] array) {
-        int[] odd = Arrays.stream(array)
-                .filter(num -> num % 2 == 1)
-                .toArray();
+    default void g() {
+        System.out.println("G");
+    }
+}
 
-        Arrays.sort(odd);
+class A {
+    String name;
+    Integer age;
 
-        for (int i = 0, j = 0; i < array.length; i++) {
-            if (array[i] % 2 == 1) {
-                array[i] = odd[j++];
-            }
-        }
-        System.out.println(Arrays.toString(array));
-        return array;
+    public A(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void abc() {
+        System.out.println("NoABC");
+    }
+}
+
+class B extends A {
+    String str;
+
+    @Override
+    void abc() {
+        System.out.println("ABC");
+    }
+
+    public B(String name, Integer age, String str) {
+        super(name, age);
+        this.str = str;
+    }
+}
+
+class Example {
+    static void show() {
+    }
+
+    void show(int x) {
     }
 }

@@ -8,8 +8,8 @@ public final class MyImmutableClass {
     private final int age;
     private final Date birthDay;
 
-    public MyImmutableClass(StringBuilder name, int age, Date birthDay) {
-        this.name = new StringBuilder(name.toString());
+    public MyImmutableClass(String name, int age, Date birthDay) {
+        this.name = new StringBuilder(name);
         this.age = age;
         this.birthDay = new Date(birthDay.getTime());
     }
